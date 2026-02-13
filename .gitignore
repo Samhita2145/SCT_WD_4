@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.history/
+*.log
+node_modules/
+package-lock.json
+.env
+*.tmp
+*.swp
+*.bak

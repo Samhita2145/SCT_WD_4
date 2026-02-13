@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <h1>TO-DO List</h1>
+
+    
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <p id="progress-text">0% Completed</p>
+
+    <div class="input-container">
+
+        
+        <div class="task-input-line">
+            <input type="text" id="task-input" placeholder="Enter a task..." />
+        </div>
+
+        
+        <div class="deadline-add-line">
+
+            <div class="deadline-box">
+                <label class="deadline-title">Deadline</label>
+
+                <div class="deadline-row">
+                    <input type="date" id="task-date">
+
+                    <select id="task-hour"></select>
+                    <select id="task-minute"></select>
+
+                    <select id="task-period">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="add-btn">Add</button>
+
+        </div>
+
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <ul id="task-list"></ul>
+
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
